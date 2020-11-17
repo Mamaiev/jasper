@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE jasperReport
+        PUBLIC "-//JasperReports//DTD Report Design//EN"
+        "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+
+<jasperReport name="report">
+    <detail>
+        <band height="20">
+            <staticText>
+                <reportElement x="220" y="0" width="200" height="20"/>
+                <text><![CDATA[Hello pharmamall guys!]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="15" y="0" width="130" height="15"/>
+
+                <textElement textAlignment="Left" verticalAlignment="Middle"/>
+
+                <textFieldExpression class = "java.lang.String">
+                    <![CDATA[$F{1}]]>
+                </textFieldExpression>
+            </textField>
+        </band>
+    </detail>
+</jasperReport>
